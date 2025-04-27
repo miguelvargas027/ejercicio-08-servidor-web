@@ -1,0 +1,39 @@
+Crear un servidor web utilizando el módulo http de Node.js que sirva un sitio estático con tres páginas: "index.html", "about.html" y "contact.html". El servidor debe escuchar en el puerto 3000 y mostrar las páginas correspondientes a las rutas "/index", "/about" y "/contact" respectivamente. Además, debe manejar adecuadamente los errores 404 y 500.
+
+Lógica de negocio:
+
+El servidor web debe responder a las solicitudes HTTP de los clientes y enviar la página HTML correspondiente según la ruta solicitada. Si se solicita una ruta no válida, se debe mostrar un mensaje de error 404. Además, si se produce un error interno en el servidor, se debe mostrar un mensaje de error 500.
+
+Datos de entrada:
+
+* Solicitudes HTTP entrantes de los clientes.
+* Rutas válidas: "/index", "/about" y "/contact".
+
+Datos de salida:
+
+* Páginas HTML correspondientes a las rutas solicitadas.
+* Mensajes de error 404 y 500.
+
+Requerimientos funcionales:
+
+* El servidor debe escuchar en el puerto 3000.
+* El servidor debe manejar adecuadamente las rutas "/index", "/about" y "/contact".
+* El servidor debe manejar adecuadamente los errores 404 y 500.
+
+Requerimientos no funcionales:
+
+* El servidor debe ser rápido y eficiente en la respuesta a las solicitudes HTTP entrantes.
+* El servidor debe ser capaz de manejar múltiples solicitudes simultáneamente.
+
+Pasos a seguir:
+
+1.Crear un directorio para el proyecto y entrar en él.
+2.Inicializar el proyecto de Node.js con el comando "npm init" y responder las preguntas que se le hagan.
+3.Crear tres archivos HTML: "index.html", "about.html" y "contact.html". Agregar un contenido básico a cada uno de ellos.
+4.Crear un archivo JavaScript llamado "server.js" que contenga el siguiente código
+5.Guardar los cambios en el archivo "server.js".
+6.Ejecutar el servidor con el comando "node server.js".
+7.Abrir un navegador web y acceder a la dirección "http://localhost:3000/index". Debería mostrarse la página "index.html".
+8.Acceder a las direcciones "http://localhost:3000/about" y "http://localhost:3000/contact". Deberían mostrarse las páginas correspondientes.
+9.Acceder a una dirección no válida, como "http://localhost:3000/foo". Debería mostrarse un mensaje de error 404.
+10.Agregar un error al servidor, como cambiar el nombre de uno de los archivos HTML. Acceder a la página correspondiente y debería mostrarse un mensaje de error 500.
